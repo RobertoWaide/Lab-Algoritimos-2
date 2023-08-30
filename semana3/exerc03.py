@@ -4,9 +4,10 @@ def cash():
     twelve = 0
     ten = 0
     five = 0
-    money = float(input("Insira um valor:"))
+    money = int(input("Insira um valor:"))
     if money % 100 == 0:
         hund = money / 100
+        money = 0
     else:
         while money > 100:
             money -= 100
@@ -14,6 +15,7 @@ def cash():
 
     if money % 50 == 0:
         fifty = money / 50
+        money = 0
     else:
         while money > 50:
             money -= 50
@@ -21,6 +23,7 @@ def cash():
 
     if money % 20 == 0:
         twelve = money / 20
+        money = 0
     else:
         while money > 20:
             money -= 20
