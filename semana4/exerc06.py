@@ -10,7 +10,7 @@ def finish(students):
 def study():
     students = {}
     while True:
-        name = input("Digite o nome do aluno: ")
+        name = input("\nDigite o nome do aluno: ")
         if name == "":
             break
         note1 = float(input("Digite a primeira nota: "))
